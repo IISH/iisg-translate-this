@@ -69,8 +69,9 @@ function iisg_translate_this_display_button() {
 
 	$content['#attached']['js'][] = array(
 		'type' => 'external',
-		'data' => $protocol . '://x.translateth.is/translate-this.js',
+		'data' => '/sites/all/modules/custom/iisg_translate_this/translate-this.js',
 	);
+//	'data' => $protocol . '://x.translateth.is/translate-this.js',
 	$content['#attached']['js'][] = array(
 		'type' => 'external',
 		'data' => $protocol . '://www.google.com/jsapi',
@@ -84,7 +85,7 @@ function iisg_translate_this_display_button() {
 	$content['button'] = array(
 		'#prefix' => '<div id="translate-this">',
 		'#suffix' => '</div>',
-		'#markup' => l(t('Translate'), 'http://translateth.is/', array(
+		'#markup' => l(t('Translate'), 'https://translateth.is/', array(
 			'attributes' => array(
 				'class' => array(
 					'translate-this-button',
