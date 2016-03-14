@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the TranslateThis Button module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function iisg_translate_this_uninstall() {
+	variable_del('iisg_translate_this_scope');
+	variable_del('iisg_translate_this_use_cookie');
+	variable_del('iisg_translate_this_always_https');
+	variable_del('iisg_translate_this_from_language');
+	variable_del('iisg_translate_this_main_panel_text');
+	variable_del('iisg_translate_this_more_languages_text');
+	variable_del('iisg_translate_this_busy_translating_text');
+	variable_del('iisg_translate_this_cancel_translating_text');
+	variable_del('iisg_translate_this_undo_text');
+	variable_del('iisg_translate_this_undo_time');
+	variable_del('iisg_translate_this_use_default_languages');
+	variable_del('iisg_translate_this_available_languages');
+	variable_del('iisg_translate_this_disable_button_image');
+	variable_del('iisg_translate_this_alternate_button_image_path');
+	variable_del('iisg_translate_this_button_width');
+	variable_del('iisg_translate_this_button_height');
+	variable_del('iisg_translate_this_disable_flag_thumbnails');
+}

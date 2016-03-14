@@ -1,0 +1,13 @@
+name = Translate This (IISG.nl version)
+description = "This button translates any page quickly using Ajax and the Google Language API"
+core = 7.x
+package = Multilanguage
+
+configure = admin/config/regional/iisg_translate_this
+
+files[] = iisg_translate_this.admin.inc
+
+version = "7.x-1.0"
+core = "7.x"
+project = "iisg_translate_this"
+
